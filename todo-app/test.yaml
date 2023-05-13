@@ -4,7 +4,6 @@ metadata:
   name: todo-app-pod
   labels:
     name: todo-app-pod
-  namespace: default
 spec:
   containers:
   - name: todo-app-pod
