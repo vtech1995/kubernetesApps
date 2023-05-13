@@ -1,8 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-pod
+  name: todo-app-pod
+  labels:
+    name: todo-app-pod
+  namespace: default
 spec:
   containers:
-    - name: my-container
-      image: nginx:latest
+  - name: todo-app-pod
+    image:  docker.io/ashishjangra/my-repo-123
+    imagePullPolicy: Always
